@@ -23,10 +23,12 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
     border-radius: 1em;
+    background: url(./images/pattern-background-mobile.svg);
 }
 
-main{
+.wrapper{
     max-width: 375px;
+    width: 375px;
     max-height: 100vh;
     overflow: hidden;
     border-radius: 1em;
@@ -95,6 +97,11 @@ button{
     box-shadow: 0 10px 16px hsla(245, 75%, 52%, .3);
 }
 
+.wrapper p:last-child{
+    padding-bottom: 2em;
+    padding-top: .5em;
+}
+
 
 
 /* utilities */
@@ -125,4 +132,28 @@ button{
 
 .txtdcr-underline{
     text-decoration: underline;
+}
+
+
+@media (min-width: 375px){
+
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-color: var(--color-primary-200);
+        background-repeat: no-repeat;
+        background-size: content;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        max-width: 1440px;
+    }
+
+    .wrapper{
+        background-color: white;
+    }
+
 }
