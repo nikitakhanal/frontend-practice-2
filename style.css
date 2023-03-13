@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary-200: hsl(225, 100%, 94%);
+    --color-primary-400: hsl(245, 75%, 52%);
+
+    --color-white-400: hsl(225, 100%, 98%);
+    --color-gray-400-hsl: 224, 23%, 55%;
+    --color-gray-400: hsl(224, 23%, 55%);
+    --color-black-400: hsl(223, 47%, 23%);
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 1em;
+}
+
+main{
+    max-width: 375px;
+    max-height: 100vh;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--color-gray-400);
+    text-align: center;
+    margin: 0 1em;
+    font-weight: var(--fw-normal);
+}
+
+.text{
+    line-height: 1.5;
+}
+
+.title{
+    font-weight: var(--fw-bolder);
+    color: var(--color-black-400);
+    text-align: center;
+    padding: .5em;
+    margin-top: .5em;
+}
+
+.flex-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-white-400);
+    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.price{
+    margin-left: 0;
+}
+
+.flex-items p:last-child{
+    margin-right: 0;
+}
+
+.price::before{
+    /* display: inline-flex;
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-image: url(./images/icon-music.svg); */
+}
+
+button{
+    display: block;
+    border: none;
+    padding: 1em;
+    text-align: center;
+    font-weight: var(--fw-bold);
+    background-color: var(--color-primary-400);
+    color: var(--color-white-400);
+    border-radius: .5em;
+    margin: 2em auto;
+    margin-bottom: 1.2em;
+    width: 82%;
+    box-shadow: 0 10px 16px hsla(245, 75%, 52%, .3);
+}
+
+
+
+/* utilities */
+
+.clr-black{
+    color: var(--color-black-400);
+}
+
+.clr-blue{
+    color: var(--color-primary-400);
+}
+
+.clr-gray{
+    color: var(--color-gray-400);
+}
+
+.fs-small{
+    font-size: 14px;
+}
+
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+
+.fw-bolder{
+    font-weight: var(--fw-bolder);
+}
+
+.txtdcr-underline{
+    text-decoration: underline;
+}
