@@ -20,6 +20,36 @@
     --fw-bolder: 900;
 }
 
+/* utilities */
+
+.clr-black{
+    color: var(--color-black-400);
+}
+
+.clr-blue{
+    color: var(--color-primary-400);
+}
+
+.clr-gray{
+    color: var(--color-gray-400);
+}
+
+.fs-small{
+    font-size: 14px;
+}
+
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+
+.fw-bolder{
+    font-weight: var(--fw-bolder);
+}
+
+.txtdcr-underline{
+    text-decoration: underline;
+}
+
 body{
     font-family: 'Red Hat Display', sans-serif;
     border-radius: 1em;
@@ -72,6 +102,13 @@ p{
 
 .flex-items p:last-child{
     margin-right: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.flex-items p:last-child:hover{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .6;
 }
 
 .price::before{
@@ -95,43 +132,23 @@ button{
     margin-bottom: 1.2em;
     width: 82%;
     box-shadow: 0 10px 16px hsla(245, 75%, 52%, .3);
+    transition: opacity .3s ease-in-out;
 }
 
-.wrapper p:last-child{
+button:hover{
+    cursor: pointer;
+    opacity: .65;
+}
+
+.cancel{
     padding-bottom: 2em;
     padding-top: .5em;
+    transition: color .3s ease-in-out;
 }
 
-
-
-/* utilities */
-
-.clr-black{
+.cancel:hover{
+    cursor: pointer;
     color: var(--color-black-400);
-}
-
-.clr-blue{
-    color: var(--color-primary-400);
-}
-
-.clr-gray{
-    color: var(--color-gray-400);
-}
-
-.fs-small{
-    font-size: 14px;
-}
-
-.fw-bold{
-    font-weight: var(--fw-bold);
-}
-
-.fw-bolder{
-    font-weight: var(--fw-bolder);
-}
-
-.txtdcr-underline{
-    text-decoration: underline;
 }
 
 
