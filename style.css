@@ -158,7 +158,7 @@ button:hover{
         background-image: url(./images/pattern-background-desktop.svg);
         background-color: var(--color-primary-200);
         background-repeat: no-repeat;
-        background-size: content;
+        background-size: contain;
         height: 100vh;
         display: flex;
         justify-content: center;
